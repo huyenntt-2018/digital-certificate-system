@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+
+Route::get('admin/login', 'AdminController@getLogin')->name('admin.login');
+Route::post('admin/login', 'AdminController@postLogin');
+Route::get('admin/logout', 'AdminController@logout')->name('admin.logout');
+
+Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
+    Route::resource('users', 'UserController');
+});
+
+// Logout
+Route::get('logout', 'HomeController@logout')->name('logout');
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/', 'HomeController@index')->name('home');
 });
