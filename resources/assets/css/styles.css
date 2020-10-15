@@ -1,0 +1,97 @@
+div.header-admin {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+div.emp-profile {
+    margin-top: 15px;
+}
+
+a#home-tab {
+    color: #000;
+}
+
+span.email,
+span.role {
+    color: #0056b3;
+}
+
+div.profile-img>img.avatar {
+    border-radius: 10%;
+    width: 275px;
+    height: 186px;
+}
+
+input.requests {
+    border: none;
+    background-color: #f1f4f6 !important;
+}
+
+strong.help-block.validated, p.help-block.validated {
+    color: red;
+    font-style: italic;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.warning-time {
+    color: red;
+    font-style: italic;
+}
+
+span.help-block {
+    color: red !important;
+}
+
+.account {
+    border: none;
+}
+
+.noti-color {
+    color: #fff;
+}
+
+div.notification {
+    top: 20px !important;
+}
+
+.media-left {
+    margin-left: -13px !important;
+}
+
+p.notification {
+    margin-bottom: 0px !important;
+}
+
+a#notification:hover {
+    cursor: pointer;
+}
+
+hr.hr-read {
+    border: 1px solid #f7f8fa;
+    margin-top: 0px !important;
+    clear: both;
+}
+
+div.mark-as-read {
+    font-size: 13px;
+    margin: 0 10px 2px 0;
+    float: right;
+}
+
+a.see-all {
+    font-size: 13px;
+}
+
+div.read {
+    border: 1px solid #e6d9d9;
+    background: #edf2fa;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+div.readed {
+    border: 1px solid #e6d9d9;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}

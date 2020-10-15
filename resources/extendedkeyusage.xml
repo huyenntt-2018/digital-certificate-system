@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extendedkeyusage>
+    <role>
+        <new_oids>extendedkeyusageOid31</new_oids>
+        <name>Admin</name>
+        <oid>1.2.3.4.5.6.1</oid>
+        <oname>EKU_NIST_ADMIN</oname>
+    </role>
+    <role>
+        <new_oids>extendedkeyusageOid32</new_oids>
+        <name>Doctor</name>
+        <oid>1.2.3.4.5.6.2</oid>
+        <oname>EKU_NIST_DOCTOR</oname>
+    </role>
+    <role>
+        <new_oids>extendedkeyusageOid33</new_oids>
+        <name>President</name>
+        <oid>1.2.3.4.5.6.3</oid>
+        <oname>EKU_NIST_PRESIDENT</oname>
+    </role>
+    <role>
+        <new_oids>extendedkeyusageOid34</new_oids>
+        <name>Vice president</name>
+        <oid>1.2.3.4.5.6.4</oid>
+        <oname>EKU_NIST_VPRESIDENT</oname>
+    </role>
+    <role>
+        <new_oids>extendedkeyusageOid35</new_oids>
+        <name>Manager</name>
+        <oid>1.2.3.4.5.6.5</oid>
+        <oname>EKU_NIST_MANAGER</oname>
+    </role>
+</extendedkeyusage>
