@@ -31,4 +31,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/', 'HomeController@index')->name('home');
     Route::resource('register-request', 'RegisterRequestController')->except(['edit, update, destroy']);
     Route::post('revoke', 'RevokeController@revoke')->name('revoke');
+    Route::get('download-cert/{certificate}', 'HomeController@download')->name('download-cert');
+    Route::get('download-pkcs12/{certificate}', 'HomeController@download')->name('download-pkcs12');
+    Route::post('check-cert', 'HomeController@checkCert')->name('check-cert');
 });
