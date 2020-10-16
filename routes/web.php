@@ -22,12 +22,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
     Route::resource('certificates', 'CertificateController')->only(['index', 'show']);
     Route::get('update-status', 'CertificateController@status')->name('update.status');
     Route::resource('number-requests', 'NumberRequestController');
+    Route::post('revoke/{numberRequest}/{certificate}', 'RevokeController@update')->name('revoke.update');
 });
-
 // Logout
 Route::get('logout', 'HomeController@logout')->name('logout');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/', 'HomeController@index')->name('home');
     Route::resource('register-request', 'RegisterRequestController')->except(['edit, update, destroy']);
+    Route::post('revoke', 'RevokeController@revoke')->name('revoke');
 });
