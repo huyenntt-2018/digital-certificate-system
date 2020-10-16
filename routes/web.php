@@ -19,6 +19,8 @@ Route::get('admin/logout', 'AdminController@logout')->name('admin.logout');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
     Route::resource('users', 'UserController');
+    Route::resource('certificates', 'CertificateController')->only(['index', 'show']);
+    Route::get('update-status', 'CertificateController@status')->name('update.status');
 });
 
 // Logout
